@@ -1,13 +1,13 @@
-Sure, here's an updated version of the README file that includes the additional step:
+Sure, here's an updated version of the README file that includes the updated Step 3:
 
 # Covvalent Assignment
 
-In this assignment, I created a backend project using Node.js and MySQL. The project must has the
-following features:
-• Fetch products with category-wise filtering
-• Fetch all categories
-• Pagination on the product list API endpoint.
-• Search functionality to the product list API endpoint.
+In this assignment, I created a backend project using Node.js and MySQL. The project must have the following features:
+
+- Fetch products with category-wise filtering
+- Fetch all categories
+- Pagination on the product list API endpoint.
+- Search functionality to the product list API endpoint.
 
 ## Prerequisites
 
@@ -26,7 +26,12 @@ Before running the project, you need to have the following software installed:
 
 2. Download XAMPP and start the Apache and MySQL services.
 
-3. Open phpMyAdmin and create a new database named "covvalent".
+3. After starting the MySQL service from XAMPP, follow these steps to create a new database:
+
+   1. Open your web browser and go to http://localhost/phpmyadmin.
+   2. In the phpMyAdmin interface, click the "Databases" tab.
+   3. Enter a name for your new database in the "Create database" field.
+   4. Click the "Create" button to create the new database.
 
 4. Create a `.env` file in the root directory of the project with the following variables:
 
@@ -36,7 +41,7 @@ Before running the project, you need to have the following software installed:
    MYSQL_HOST=<mysql_host>
    MYSQL_USERNAME=<mysql_username>
    MYSQL_PASSWORD=<mysql_password>
-   MYSQL_DATABASE='covvalent'
+   MYSQL_DATABASE=<mysql_database>
    ```
 
    Note: If you are using a local MySQL instance, the `MYSQL_PASSWORD` should be left empty.
@@ -87,9 +92,11 @@ The following endpoints are available in the API:
 
 1. Download and install Postman.
 
-2. Open Postman File Folder and import the provided `covvalent.postman_collection.json` file.
+2. Open Postman and import the provided `covvalent.postman_collection.json` file ( which is located inside Postman File Folder ) by clicking on "Import" in the top left corner.
 
 3. Use the imported collection to test the API endpoints.
+
+   **Note:** Replace `<port_number>` in the URLs with the port number on which your server is running.
 
 ## License
 
