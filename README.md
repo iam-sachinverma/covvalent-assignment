@@ -1,4 +1,4 @@
-Sure, here's an updated version of the README file that includes the updated Step 3:
+Sure, here's an updated version of the README file that includes the additional step:
 
 # Covvalent Assignment
 
