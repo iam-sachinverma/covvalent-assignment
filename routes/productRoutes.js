@@ -7,12 +7,6 @@ const router = express.Router();
 router.route("/").get(productController.getProducts);
 
 // Fetch categories
-router.route("/categories").get(productController.getCatgories);
-
-// Fetch all products with category-wise filtering
-router.get(
-  "/api/products/:categoryName",
-  productController.getProductsByCategory
-);
+router.route("/categories").get(productController.getAllCategories);
 
 module.exports = router;
