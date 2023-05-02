@@ -1,5 +1,3 @@
-Sure, here's an updated version of the README file that includes the additional step:
-
 # Covvalent Assignment
 
 In this assignment, I created a backend project using Node.js and MySQL. The project must have the following features:
