@@ -6,7 +6,10 @@ const productRouter = require("./routes/productRoutes");
 const app = express();
 
 // Middlewares
-if (process.env.NODE_ENV === "Development") app.use(express.json());
+if (process.env.NODE_ENV === "development") {
+  app.use(morgan("dev"));
+}
+app.use(express.json());
 
 // ROUTES
 app.use("/api/products", productRouter);

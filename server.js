@@ -1,19 +1,18 @@
-const mysql = require("mysql2");
-const dotenv = require("dotenv");
-dotenv.config({ path: "./config.env" });
+const sequelize = require("./database");
 
 const app = require("./app");
 
 const port = process.env.PORT || 3000;
 
-const pool = mysql
-  .createPool({
-    host: "127.0.0.1",
-    user: "root",
-    password: "",
-    database: "covvalent",
-  })
-  .promise();
+// DB
+(async () => {
+  try {
+    await sequelize.authenticate();
+    console.log("Connection has been established successfully.");
+  } catch (error) {
+    console.error("Error connecting to the database:", error);
+  }
+})();
 
 app.listen(port, () => {
   console.log(`App running on port ${port}.... `);
