@@ -50,16 +50,16 @@ Before running the project, you need to have the following software installed:
    npm install
    ```
 
-6. To create the necessary tables and populate them with dummy data, run the following command:
-
-   ```
-   node product-data/import-data.js --import
-   ```
-
-7. Start the server by running the following command:
+6. Start the server by running the following command:
 
    ```
    npm start
+   ```
+   
+7. Open new terminal and enter this to create the necessary tables and populate them with dummy data, run the following command:
+
+   ```
+   node product-data/import-data.js --import
    ```
 
 ## API Endpoints
